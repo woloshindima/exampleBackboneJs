@@ -1,0 +1,28 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../node_modules/animate-scss/animate';
+@import "pagination";
+@import "spinner";
+.main-view-container{
+
+  &>div{
+    @extend .col-12;
+    button{
+      cursor: pointer;
+    }
+    .main-container_search-menu{
+      margin: 0 auto;
+      h1{
+        text-align: center;
+      }
+    }
+    .example-zone{
+
+    }
+    .left {
+      float: left !important;
+    }
+    .right {
+      float: right !important;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import 'color';
+
+.main-container_pagination {
+  position: relative;
+  top: 20px;
+  .main-container_pagination_list {
+    display: block;
+    position: relative;
+    width: 250px;
+    margin: 20px auto;
+    a {
+      cursor: pointer;
+    }
+    li{
+      line-height: 35px;
+      width: 47px;
+      float: left;
+      height: 35px;
+      text-align: center;
+    }
+    a.disabled {
+      color: $disabled;
+      &:hover,
+      &:focus {
+        background: #fff;
+        color: $disabled;
+        cursor: no-drop;
+      }
+    }
+    .input {
+      input,
+      input:hover,
+      input:focus {
+        width: 40px;
+      }
+      &:after {
+        opacity: 1;
+      }
+      transition: .5s;
+      &:after {
+        content: 'press Enter';
+        position: absolute;
+        display: inline-block;
+        background: white;
+        padding: 10px;
+        border-radius: 50%;
+        border-top-left-radius: 0;
+        top: 39px;
+        font-size: 11px;
+        color: gray;
+        opacity: 0;
+        box-shadow: 6px 5px 13px 0px rgba(0, 0, 0, 0.25);
+        transition: .5s;
+        transition-delay: 2s;
+      }
+      &:hover:after {
+        opacity: 1;
+      }
+      a {
+        padding: 3px 7px;
+        input {
+          text-align: center;
+          width: 20px;
+          transition: .5s;
+        }
+      }
+    }
+  }
+}
