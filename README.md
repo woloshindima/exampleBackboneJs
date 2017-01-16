@@ -2,7 +2,7 @@
 
 ### How to Start
 
-- open dir. : 4ib/
+- open dir. : /
 - start HTTP Server
 - open in browser :  [http://localhost:8080/](http://localhost:8080/)
 
